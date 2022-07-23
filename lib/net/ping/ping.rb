@@ -56,7 +56,7 @@ module Net
       #
       def initialize(host=nil, port=nil, timeout=5)
          @host      = host
-         @port      = port || Socket.getservbyname('echo') || 7
+         @port      = port || 7
          @timeout   = timeout
          @exception = nil
          @warning   = nil
